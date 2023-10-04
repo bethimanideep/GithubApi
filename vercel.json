@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "githubapi",
+    "name": "repodata",
     "builds": [
         {
             "src": "./index.js",
