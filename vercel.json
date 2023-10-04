@@ -1,6 +1,6 @@
 {
     "version": 2,
-    "name": "GithubApi",
+    "name": "githubapi",
     "builds": [
         {
             "src": "./index.js",
