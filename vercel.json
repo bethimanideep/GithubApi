@@ -11,6 +11,10 @@
         {
             "src": "/(.*)",
             "dest": "/"
+        },
+        {
+            "src": "/api-docs/(.*)",
+            "dest": "/path/to/swagger/ui/index.html"
         }
     ]
 }
