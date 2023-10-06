@@ -10,7 +10,7 @@
     "routes": [
       {
         "src": "/api-docs",
-        "dest": "swagger.yaml"
+        "dest": "/swagger.yaml"
       },
       {
         "src": "/(.*)",
