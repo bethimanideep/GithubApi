@@ -4,8 +4,8 @@ info:
   description: API documentation for saving and retrieving GitHub data.
   version: 1.0.0
 servers:
-  - url: http://localhost:8000
   - url: https://githubapi-m5vf.onrender.com/
+  - url: http://localhost:8000
 paths:
   /github:
     post:
