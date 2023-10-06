@@ -27,6 +27,10 @@ const options = {
         },
         servers: [
             {
+                url: "https://github-api-blond.vercel.app",
+                description: "My API Documentation",
+            },
+            {
                 url: "http://localhost:8000",
                 description: "My API Documentation",
             },
