@@ -14,6 +14,7 @@ app.use(cors());
 const swaggerDocument = YAML.parse(fs.readFileSync(path.join(__dirname, 'swagger.yaml'), 'utf8'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
+
 app.use('/',router)
 app.get('/',(req,res)=>{
     res.json('Backend Running')
