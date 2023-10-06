@@ -7,6 +7,7 @@ const router = require('./Routes/github.route');
 const app = express();
 require('dotenv').config();
 app.use(express.json())
+app.use(require('cors')())
 
 const swaggerDocument = YAML.parse(fs.readFileSync('./swagger.yaml', 'utf8'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
