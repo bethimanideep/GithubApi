@@ -1,6 +1,7 @@
 const express = require('express');
 const swaggerUi = require('swagger-ui-express');
 const fs = require('fs');
+const path = require('path');
 const cors = require('cors');
 const YAML = require('yamljs'); // To parse the YAML file
 const { connection } = require('./Configs/db');
@@ -10,7 +11,7 @@ require('dotenv').config();
 app.use(express.json())
 app.use(cors());
 
-const swaggerDocument = YAML.parse(fs.readFileSync('./swagger.yaml', 'utf8'));
+const swaggerDocument = YAML.parse(fs.readFileSync(path.join(__dirname, 'swagger.yaml'), 'utf8'));
 app.use('/api-docs', swaggerUi.serve, swaggerUi.setup(swaggerDocument));
 
 app.use('/',router)
